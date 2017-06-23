@@ -1,0 +1,129 @@
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:400,400italic,700,700italic,600italic,600);
+body {
+	background: #010d19, #1c344c;
+	background: linear-gradient(90deg, #010d19, #1c344c);
+	font-family: 'Titillium Web', sans-serif;
+	text-shadow: 0 0 2px #333;
+}
+
+h1 {
+	font-weight: 700;
+}
+
+h3 {
+	font-weight: 600;
+}
+
+.topper {
+	margin-top: 15px;
+}
+
+
+/* header stuff */
+
+.head {
+	background: #1c344c;
+	background: linear-gradient(90deg, #32587f, #1c344c);
+	color: #fff;
+	border: 1px solid #666;
+	border-radius: 5px 15px 0 0;
+}
+
+.switch {
+	text-align: right;
+}
+
+.btn-active {
+	background: #c6e070;
+	color: #333;
+	outline: none;
+}
+
+.btn {
+	border-radius: 5px 10px 5px 10px;
+	outline: none;
+}
+
+
+/* channel stuff */
+
+.hideIt {
+	display: none;
+}
+
+.channel:hover {
+	box-shadow: inset 0 0 100px rgba(255, 255, 255, .5);
+}
+
+.list-online {
+	background: #c6e070;
+	background: linear-gradient(90deg, #576c11, #c6e070);
+	border-left: 1px solid #666;
+	border-right: 1px solid #666;
+	border-bottom: 1px solid #666;
+}
+
+.list-online a {
+	color: #fff;
+}
+
+.list-offline {
+	background: #ccc;
+	background: linear-gradient(90deg, #666, #ccc);
+	border-left: 1px solid #666;
+	border-right: 1px solid #666;
+	border-bottom: 1px solid #666;
+}
+
+.list-offline a {
+	color: #fff;
+}
+
+.list-dead {
+	background: #333;
+	background: linear-gradient(90deg, #2e2e2e, #666);
+	border-left: 1px solid #666;
+	border-right: 1px solid #666;
+	border-bottom: 1px solid #666;
+	color: #000;
+}
+
+.logo {
+	border-radius: 5px 10px 5px 10px;
+	/* border: 5px solid #1c344c; */
+	box-shadow: 0 0 7px #333;
+}
+
+.logo-bkgd {
+	background: rgba(0, 0, 0, .2);
+	padding: 2px 5px !important;
+	text-align: center;
+}
+
+#stream {
+	font-size: 17px;
+}
+
+
+/* footer stuff */
+
+.footer {
+	background: #1c344c;
+	background: linear-gradient(90deg, #32587f, #1c344c);
+	color: #fff;
+	border-left: 1px solid #666;
+	border-right: 1px solid #666;
+	border-bottom: 1px solid #666;
+	border-radius: 0 0 5px 15px;
+	height: 40px;
+	padding: 10px;
+	text-align: right;
+	margin-bottom: 20px;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+	outline: none !important;
+}
