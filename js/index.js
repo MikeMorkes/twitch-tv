@@ -30,7 +30,8 @@ function channelSlice(value, index) {
 	// grab data to find out if the channels are streaming, not streaming, or dead
 	$.getJSON("https://wind-bow.gomix.me/twitch-api/streams/" + channelList[index] + "?callback=?", function(resultStreams) {
 		
-		console.log("https://wind-bow.gomix.me/twitch-api/streams/" + channelList[index] + "?callback=?");
+		//console.log("https://wind-bow.gomix.me/twitch-api/streams/" + channelList[index] + "?callback=?");
+		console.log("https://wind-bow.gomix.me/twitch-api/channels/" + channelList[index] + "?callback=?");
 
 		// assign variable based on stream status
 		if (resultStreams.stream === undefined) {
@@ -48,6 +49,8 @@ function channelSlice(value, index) {
 			if (result.logo === undefined) {
 				result.logo = "http://www.mikemorkes.com/codepen/twitch/dead_logo.png";
 			} else if (result.logo === null) {
+				result.logo = "http://www.mikemorkes.com/codepen/twitch/generic_logo.png";
+			} else { // remove this if the logo bug gets fixed
 				result.logo = "http://www.mikemorkes.com/codepen/twitch/generic_logo.png";
 			};
 
