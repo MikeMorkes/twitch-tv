@@ -47,11 +47,11 @@ function channelSlice(value, index) {
 
 			// check to see if channel has a logo - give custom logo based on offline or dead
 			if (result.logo === undefined) {
-				result.logo = "http://www.mikemorkes.com/codepen/twitch/dead_logo.png";
+				result.logo = "../twitch-tv/img/dead_logo.png";
 			} else if (result.logo === null) {
-				result.logo = "http://www.mikemorkes.com/codepen/twitch/generic_logo.png";
+				result.logo = "../twitch-tv/img/generic_logo.png";
 			} else { // remove this if the logo bug gets fixed
-				result.logo = "http://www.mikemorkes.com/codepen/twitch/generic_logo.png";
+				result.logo = "../twitch-tv/img/generic_logo.png";
 			};
 
 			// style and populate an online channel
